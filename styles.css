@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+:root {
+  --primary-cyan: hsl(193, 38%, 86%);
+  --primary-neon-green: hsl(150, 100%, 66%);
+  --neutral-gray-blue: hsl(217, 19%, 38%);
+  --neutral-dark-gray-blue: hsl(217, 19%, 24%);
+  --neutral-dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--neutral-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+ max-width: 23.5rem;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ text-align: center;
+ background-color: var(--neutral-dark-gray-blue);
+ padding: 2rem 1rem 0rem 1rem;
+ border-radius: 1rem;
+}
+
+main p {
+  text-transform: uppercase;
+  color: var(--primary-neon-green);
+  letter-spacing: 3px;
+  font-size: .7rem;
+  margin-bottom: 1.5rem;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  color: var(--primary-cyan);
+  margin-bottom: 2rem;
+  max-width: 20rem;
+}
+
+main .divider-desktop {
+  display: none;
+}
+
+main div {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: var(--primary-neon-green);
+  position: relative;
+  transform: translateY(2rem);
+}
+
+main div img {
+  position: absolute;
+  top: 32%;
+  left: 32%;
+}
+
+main div:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 25px 3px var(--primary-neon-green);
+}
+
+@media (min-width: 1000px) {
+  main {
+    max-width: 40rem;
+    padding: 3rem 3rem 0rem 3rem;
+  }
+  
+  main h1 {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+
+  main .divider-desktop {
+    display: block;
+  }
+
+  main .divider-mobile {
+    display: none;
+  }
+
+}
