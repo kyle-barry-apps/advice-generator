@@ -12,7 +12,6 @@ This is a simple, mobile-first advice generator app. Its function is to provide 
 
 ![](./screenshots/desktop-view.png)
 ![](./screenshots/mobile-view.png)
-![](./screenshots/active-state.png)
 
 ### Built with
 
